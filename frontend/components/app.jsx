@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default App = () => (
-    <div className='app'>
-        <h1>A Todos App</h1>
+const App = () => (
+    <div className="app">
+        <h1>Todo List</h1>
     </div>
 );
+
+export default App;
