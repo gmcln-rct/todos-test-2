@@ -7,8 +7,11 @@ body {
 h1 {
     font-family: 'Muli', sans-serif;
     color: #68B3A6;
+    font-weight: 800;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
 }
