@@ -1,5 +1,5 @@
 import TodoList from './todo_list';
-import {connect} from 'read-redux';
+import {connect} from 'react-redux';
 
 //Actions and Selectors
 import {allTodos} from '../../reducers/selectors';
