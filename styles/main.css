@@ -15,7 +15,7 @@ h1 {
     font-family: 'Muli', sans-serif;
     font-weight: 800;
     margin-block-end: 0;
-    color: #9497B3;
+    color: #79B3A9;
 }
 
 p {
@@ -23,6 +23,8 @@ p {
     font-size: 0.8em;
     font-weight: 300;
 }
+
+
 
 .app {
     display: flex;
@@ -42,6 +44,49 @@ p {
     margin: 1em;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        color: #9FA4CC;
+        color: #9497B3;
 
+}
+
+/* FORM */
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1em;
+
+    background-color: #E8C6C1;
+    border-radius: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    width: 30%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #B3968B;
+
+    border-radius: 5px;
+    border: 1px solid #FFE9E0;
+
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+button:hover {
+    color: #B3968B;
+    background-color: #FFE9E0;
+    border-color: #B3968B;
+}
+label {
+    margin-bottom: 0.5em;
+
+    font-weight: 600;
+
+}
+input {
+    background-color: #FFFBFA;
 }
