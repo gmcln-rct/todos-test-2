@@ -69,7 +69,7 @@ button {
     width: 30%;
     margin: 0 auto;
     color: #fff;
-    background-color: #B3968B;
+    background-color: #80594A;
 
     border-radius: 5px;
     border: 1px solid #FFE9E0;
@@ -80,12 +80,14 @@ button {
 }
 
 button:hover {
-    color: #B3968B;
-    background-color: #FFE9E0;
+    color: #fff;
+    background-color: #B3968B;
     border-color: #B3968B;
 }
 label {
     margin-bottom: 0.5em;
+
+    color: #80594A;
 
     font-weight: 600;
 
