@@ -3,7 +3,7 @@
 body {
       background-image:
         radial-gradient(
-        circle at top right,
+        70em at top right,
         #FCB899,
         #F81E3C
         );
@@ -19,14 +19,16 @@ h1 {
     font-family: 'Muli', sans-serif;
     font-weight: 800;
     margin-block-end: 0;
-    color: #79B3A9;
+    color: #fff;
 }
 
-p {
+h2 {
     margin-block-start: 2;
+
+    color: rgb(253, 241, 235);
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 
@@ -44,13 +46,19 @@ p {
 
 }
 
+/* TODO LIST */
+
 .todo-list-item {
     list-style: none;
-    margin: 1em;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #C4182F;
+    background-color: #FFCCB5;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     font-weight: 600;
-    color: #C4182F
 
 }
 
