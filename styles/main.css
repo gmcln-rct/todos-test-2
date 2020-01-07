@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800|Muli:300,400,500,600,700,800,900&display=swap');
 
 body {
-    background: #FFE9E0;
-
+      background-image:
+        radial-gradient(
+        circle at top right,
+        #FCB899,
+        #F81E3C
+        );
 }
 
 #content {
@@ -19,6 +23,7 @@ h1 {
 }
 
 p {
+    margin-block-start: 2;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-weight: 300;
@@ -42,9 +47,10 @@ p {
 .todo-list-item {
     list-style: none;
     margin: 1em;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        color: #9497B3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #C4182F
 
 }
 
@@ -59,7 +65,7 @@ form {
 
     padding: 1em;
 
-    background-color: #E8C6C1;
+    background-color: #FCB899;
     border-radius: 10px;
 
     font-family: 'Montserrat', sans-serif;
@@ -69,10 +75,9 @@ button {
     width: 30%;
     margin: 0 auto;
     color: #fff;
-    background-color: #80594A;
+    background-color: #780E1C;
 
     border-radius: 5px;
-    border: 1px solid #FFE9E0;
 
     font-size: 1em;
     font-weight: 600;
@@ -80,14 +85,14 @@ button {
 }
 
 button:hover {
-    color: #fff;
-    background-color: #B3968B;
-    border-color: #B3968B;
+    color: #780E1C;
+    background-color: #F9687C;
+    border-color: #F9687C;
 }
 label {
     margin-bottom: 0.5em;
 
-    color: #80594A;
+    color: #780E1C;
 
     font-weight: 600;
 
