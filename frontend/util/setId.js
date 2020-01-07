@@ -1,3 +1,3 @@
-export function uniqueId() {
+export function setId() {
     return new Date().getTime();
 }

@@ -18,6 +18,13 @@ class TodoForm extends React.Component {
     }
     handleSubmit(e) {
         e.preventDefault();
+        const todo = Object.assign({}, this.state, { id: setId()});
+        this.props.receiveTodo(todo);
+        this.setState({
+            title: '',
+            body: '',
+            doitness: false
+        });
     }
 
 
@@ -48,9 +55,9 @@ class TodoForm extends React.Component {
                 </label>
                 <button className='create-todo-button'>Add Todo</button>
             </form>
-        )
+        );
     }
-}
+};
 
 export default TodoForm;
 
