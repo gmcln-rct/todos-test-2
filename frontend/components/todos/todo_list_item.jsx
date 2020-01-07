@@ -6,10 +6,14 @@ class TodoListItem extends React.Component {
     }
 
     render() {
-        const {todo} = this.props;
+        const {todo, removeTodo} = this.props;
         return (
             <li className='todo-list-item'>
                 {todo.title}
+                <button
+                    className="delete-button"
+                    onClick={removeTodo}>Delete Todo
+                </button>
             </li>
         )
     }
