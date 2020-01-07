@@ -38,7 +38,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
 
-    width: 80%;
+    width: 100%;
     min-width: 20em;
     margin: 0 auto;
 
@@ -50,9 +50,11 @@ h2 {
 
 .todo-list-item {
     list-style: none;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 60%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 5px;
     color: #C4182F;
     background-color: #FFCCB5;
 
@@ -82,8 +84,10 @@ form {
 button {
     width: 30%;
     margin: 0 auto;
+    padding: 5px;
+    
     color: #fff;
-    background-color: #780E1C;
+    background-color: #AB0A20;
 
     border-radius: 5px;
 
@@ -109,7 +113,12 @@ input {
     width: 80%;
     margin-top: 0.5em;
     padding: 5px;
-    background-color: #FFFBFA;
+
+    background-color: #FFF;
+    box-shadow: none;
+    border: none;
+
+    line-height: 2em;
 }
 textarea {
     width: 80%;
@@ -117,4 +126,10 @@ textarea {
     min-width: 80%;
     margin-top: 0.5em;
     padding: 5px;
+
+    background-color: #FFF;
+    box-shadow: none;
+    border: none;
+
+    line-height: 2em;
 }
