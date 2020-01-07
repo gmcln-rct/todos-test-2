@@ -5,14 +5,16 @@ const initialState = {
     1: {
         id: 1,
         title: "wash car",
-        body: "with soap",
-        done: false
+        body: "bring lots of soap",
+        done: false,
+        doitness: true
     },
     2: {
         id: 2,
         title: "wash dog",
         body: "with shampoo",
-        done: true
+        done: true,
+        doitness: true
     }
 };
 

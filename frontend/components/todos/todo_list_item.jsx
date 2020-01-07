@@ -10,7 +10,7 @@ class TodoListItem extends React.Component {
         return (
             <li className='todo-list-item'>
                 {todo.title}
-                </li>
+            </li>
         )
     }
 
