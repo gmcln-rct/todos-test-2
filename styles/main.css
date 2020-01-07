@@ -36,3 +36,12 @@ p {
     text-align: center;
 
 }
+
+.todo-list-item {
+    list-style: none;
+    margin: 1em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #9FA4CC;
+
+}
