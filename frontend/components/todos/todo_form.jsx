@@ -34,7 +34,7 @@ class TodoForm extends React.Component {
         return (
 
             <form className='todo-form' onSubmit={this.handleSubmit}>
-                <label> Todo Title
+                <label> Todo Title <br/>
                     <input
                         className='input'
                         ref='title'
@@ -44,7 +44,7 @@ class TodoForm extends React.Component {
                         required
                     />
                 </label>
-                <label> Description
+                <label> Description <br/>
                     <textarea
                         className='input'
                         ref='body'

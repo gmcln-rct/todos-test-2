@@ -54,6 +54,9 @@ form {
     justify-content: center;
     flex-direction: column;
 
+    width: 40%;
+    margin: 0 auto;
+
     padding: 1em;
 
     background-color: #E8C6C1;
@@ -88,5 +91,15 @@ label {
 
 }
 input {
+    width: 80%;
+    margin-top: 0.5em;
+    padding: 5px;
     background-color: #FFFBFA;
+}
+textarea {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    margin-top: 0.5em;
+    padding: 5px;
 }
