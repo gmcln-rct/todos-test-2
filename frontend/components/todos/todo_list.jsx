@@ -19,7 +19,7 @@ class TodoList extends React.Component {
             />
 
         ));
-            debugger
+            
         return (
             <div>
                 <ul className='todo-list'>

@@ -10,12 +10,15 @@ class TodoListItem extends React.Component {
         
         return (
             <li className='todo-list-item'>
-                {todo.title}
-                <button
+                <div className="todo-title">
+                    {todo.title}
+                </div>
+                
+                {/* <button
                     className="delete-button"
                     onClick={removeTodo}>
                     Delete
-                </button>
+                </button> */}
             </li>
         )
     }
