@@ -14,12 +14,12 @@ class TodoList extends React.Component {
             < TodoListItem
                 key={todo.id}
                 todo= {todo}
-                removeTodo={removeTodo}
                 receiveTodo={receiveTodo}
+                removeTodo={removeTodo}
             />
 
         ));
-
+            debugger
         return (
             <div>
                 <ul className='todo-list'>
