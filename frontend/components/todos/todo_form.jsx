@@ -16,6 +16,7 @@ class TodoForm extends React.Component {
     update(property) {
         return e => this.setState( {[property]: e.target.value })
     }
+    
     handleSubmit(e) {
         e.preventDefault();
         const todo = Object.assign({}, this.state, { id: setId()});

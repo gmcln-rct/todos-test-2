@@ -12,7 +12,8 @@ class TodoListItem extends React.Component {
                 {todo.title}
                 <button
                     className="delete-button"
-                    onClick={removeTodo}>Delete Todo
+                    onClick={removeTodo}>
+                    Delete
                 </button>
             </li>
         )
