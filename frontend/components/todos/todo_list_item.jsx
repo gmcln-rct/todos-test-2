@@ -7,13 +7,14 @@ class TodoListItem extends React.Component {
     }
 
     toggleTodo(e) {
-        e.prevenDefault();
+        e.preventDefault();
+        
         const toggledTodo = Object.assign(
             {},
             this.props.todo,
             { doitness: !this.props.todo.doitness }
         );
-
+        alert('Really? Are you sure?? I mean, up to you.');
         this.props.receiveTodo(toggledTodo);
     }
 
@@ -30,7 +31,7 @@ class TodoListItem extends React.Component {
                 <button
                     className={doitness ? "todo" : "not-to-do"}
                     onClick= {this.toggleTodo} >
-                    Change Your Mind
+                    Change Mind
                 </button>
                 {/* <button
                     className="delete-button"

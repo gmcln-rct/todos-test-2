@@ -24,7 +24,7 @@ const initialState = {
     },
     4: {
         id: 4,
-        title: "Swim regularly in Gowanus",
+        title: "Swim regularly in Gowanus Canal",
         body: "with shampoo",
         done: true,
         doitness: false
