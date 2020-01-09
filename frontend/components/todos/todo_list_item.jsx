@@ -3,6 +3,18 @@ import React from 'react';
 class TodoListItem extends React.Component {
     constructor(props) {
         super(props);
+        this.toggleTodo = this.toggleTodo.bind(this);
+    }
+
+    toggleTodo() {
+        e.prevenDefault();
+        const toggledTodo = Object.assign(
+            {},
+            this.props.todo,
+            { doitness: !this.props.todo.doitness }
+        );
+
+        this.props.receiveTodo(toggledTodo);
     }
 
     render() {
@@ -13,7 +25,11 @@ class TodoListItem extends React.Component {
                 <div className="todo-title">
                     {todo.title}
                 </div>
-                
+                <button
+                    className={doitness ? "todo" : "not to do"}
+                    onClick= {this.toggleTodo}                >
+                        {doitness? "Do" : "Not To Do"}
+                </button>
                 {/* <button
                     className="delete-button"
                     onClick={removeTodo}>

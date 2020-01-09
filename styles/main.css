@@ -23,7 +23,8 @@ h1 {
 }
 
 h2 {
-    margin-block-start: 2;
+    margin-block-start: 1;
+    margin-bottom: 2rem;
 
     color: rgb(253, 241, 235);
     font-family: 'Montserrat', sans-serif;
@@ -79,6 +80,10 @@ li.todo-list-item {
 }
 
 /* FORM */
+
+.todo-form {
+    margin-top: 5rem;
+}
 form {
     display: flex;
     justify-content: center;
@@ -105,7 +110,7 @@ button {
 
     border-radius: 5px;
 
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
 }
@@ -119,14 +124,15 @@ label {
     margin-bottom: 0.5em;
 
     color: #780E1C;
-
+    font-size: 1.5rem;
     font-weight: 600;
+    
 
 }
 input {
     width: 80%;
     margin-top: 0.5em;
-    padding: 5px;
+    padding: 0.5rem;
 
     background-color: #FFF;
     box-shadow: none;
@@ -146,4 +152,8 @@ textarea {
     border: none;
 
     line-height: 2em;
+}
+
+::placeholder {
+    font-size: 1rem;
 }

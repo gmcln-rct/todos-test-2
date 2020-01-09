@@ -3,14 +3,21 @@ import { RECEIVE_TODOS, RECEIVE_TODO, REMOVE_TODO } from '../actions/todo_action
 const initialState = {
     1: {
         id: 1,
-        title: "lick lead paint",
+        title: "lick lead paint daily",
         body: "bring lots of soap",
         done: false,
         doitness: false
     },
     2: {
         id: 2,
-        title: "wash hands regularly",
+        title: "Wash hands regularly",
+        body: "with shampoo",
+        done: true,
+        doitness: true
+    },
+    3: {
+        id: 3,
+        title: "Eat kale",
         body: "with shampoo",
         done: true,
         doitness: true
