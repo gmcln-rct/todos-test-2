@@ -53,12 +53,17 @@ ul {
     margin: 0 auto;
 
 }
+
+li {
+    width: 100%;
+    min-width: 100%;
+}
 li.todo-list-item {
     display: flex;
     justify-content: left;
     align-items: center;
     
-    width: 100%;
+
     margin-bottom: 1rem;
 
     padding: 1rem;
@@ -70,6 +75,11 @@ li.todo-list-item {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     font-weight: 600;
+
+}
+
+.todo, .not-to-do {
+    width: 6rem;
 
 }
 

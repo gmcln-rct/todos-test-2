@@ -19,15 +19,16 @@ class TodoListItem extends React.Component {
 
     render() {
         const {todo, removeTodo} = this.props;
+        const {title, doitness, id} = todo;
         
         return (
             <li className='todo-list-item'>
                 <div className="todo-title">
-                    {todo.title}
+                    {title}
                 </div>
                 <button
-                    className={doitness ? "todo" : "not to do"}
-                    onClick= {this.toggleTodo}                >
+                    className={doitness ? "todo" : "not-to-do"}
+                    onClick= {this.toggleTodo} >
                         {doitness? "Do" : "Not To Do"}
                 </button>
                 {/* <button
