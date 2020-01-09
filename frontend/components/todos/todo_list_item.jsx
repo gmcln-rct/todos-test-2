@@ -4,6 +4,7 @@ class TodoListItem extends React.Component {
     constructor(props) {
         super(props);
         this.toggleTodo = this.toggleTodo.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     toggleTodo(e) {
@@ -18,9 +19,17 @@ class TodoListItem extends React.Component {
         this.props.receiveTodo(toggledTodo);
     }
 
+    handleDelete() {
+        const { todo, removeTodo } = this.props;
+        const { title, doitness, id } = todo;
+        const todoId = id;
+        this.props.removeTodo(todoId)
+    }
+
     render() {
         const {todo, removeTodo} = this.props;
         const {title, doitness, id} = todo;
+        const todoId = id;
         
         return (
             <li className='todo-list-item'>
@@ -33,11 +42,11 @@ class TodoListItem extends React.Component {
                     onClick= {this.toggleTodo} >
                     Change Mind
                 </button>
-                {/* <button
+                <button
                     className="delete-button"
-                    onClick={removeTodo}>
+                    onClick={this.handleDelete}>
                     Delete
-                </button> */}
+                </button>
             </li>
         )
     }

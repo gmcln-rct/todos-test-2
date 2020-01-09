@@ -13,7 +13,7 @@ const msp = state => ({
 
 const mdp = (dispatch, {todo} ) => ({
     receiveTodo: todo => dispatch(receiveTodo(todo)),
-    removeTodo: () => dispatch(removeTodo(todo))
+    removeTodo: (id) => dispatch(removeTodo(id))
 });
 
 export default connect(msp, mdp)(TodoList);
