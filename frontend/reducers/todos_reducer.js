@@ -21,6 +21,13 @@ const initialState = {
         body: "with shampoo",
         done: true,
         doitness: true
+    },
+    4: {
+        id: 4,
+        title: "Swim regularly in Gowanus",
+        body: "with shampoo",
+        done: true,
+        doitness: false
     }
 };
 

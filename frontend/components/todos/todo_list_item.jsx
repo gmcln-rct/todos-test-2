@@ -6,7 +6,7 @@ class TodoListItem extends React.Component {
         this.toggleTodo = this.toggleTodo.bind(this);
     }
 
-    toggleTodo() {
+    toggleTodo(e) {
         e.prevenDefault();
         const toggledTodo = Object.assign(
             {},
@@ -26,10 +26,11 @@ class TodoListItem extends React.Component {
                 <div className="todo-title">
                     {title}
                 </div>
+                <div className="do-it-status">{doitness ? "Do" : "Not To Do"}</div>
                 <button
                     className={doitness ? "todo" : "not-to-do"}
                     onClick= {this.toggleTodo} >
-                        {doitness? "Do" : "Not To Do"}
+                    Change Your Mind
                 </button>
                 {/* <button
                     className="delete-button"
