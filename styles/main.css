@@ -47,13 +47,13 @@ h2 {
 
 /* TODO LIST */
 ul {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
 li {
     width: 100%;
-    min-width: 100%;
+
 }
 
 li.todo-list-item {
@@ -74,7 +74,6 @@ li.todo-list-item {
 
 .todo-title {
     width: 40%;
-    min-width: 30rem;
     margin: 0 2rem;    
     color: #C4182F;
     text-align: left;
@@ -97,8 +96,10 @@ li.todo-list-item {
 
 /* BUTTONS */
 .action-buttons {
+    display: flex;
+    justify-content: space-evenly;
     width: 20%;
-    min-width: 25rem;
+
     
 }
 .todo, .not-to-do {
