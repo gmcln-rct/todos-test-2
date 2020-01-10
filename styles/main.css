@@ -198,3 +198,11 @@ textarea {
 ::placeholder {
     font-size: 1rem;
 }
+
+select {
+    width: 20%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}

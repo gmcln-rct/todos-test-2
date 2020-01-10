@@ -8,7 +8,7 @@ class TodoForm extends React.Component {
             title: '',
             body: '',
             done: false,
-            doitness: false
+            doitness: true
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -50,7 +50,7 @@ class TodoForm extends React.Component {
                         required
                     />
                 </label>
-                <label> Description <br/>
+                {/* <label> Description <br/>
                     <textarea
                         className='input'
                         ref='body'
@@ -58,11 +58,11 @@ class TodoForm extends React.Component {
                         placeholder='enter todo description here'
                         onChange={this.update('body')}
                         required></textarea>
-                </label>
+                </label> */}
 
                 <label>Do? <br />
                     <select value={this.state.doitness} onChange={this.handleChange}>
-                        <option value="true">To Do</option>
+                        <option selected value="true">To Do</option>
                         <option value="false">Not To Do</option>
                     </select>
 
