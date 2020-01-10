@@ -64,7 +64,6 @@ li.todo-list-item {
     margin-bottom: 1rem;
     padding: 1rem;
     
-
     background-color: #FFCCB5;
     
     list-style: none;
@@ -88,7 +87,7 @@ li.todo-list-item {
 }
 
 .status-do {
-    color: #0488C4;
+    color: #C30FD1;
 }
 
 .status-not-do {

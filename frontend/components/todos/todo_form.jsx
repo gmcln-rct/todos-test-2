@@ -11,10 +11,15 @@ class TodoForm extends React.Component {
             doitness: false
         }
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     update(property) {
         return e => this.setState( {[property]: e.target.value })
+    }
+
+    handleChange(e) {
+        this.setState({doitness: event.target.doitness});
     }
     
     handleSubmit(e) {
@@ -54,6 +59,15 @@ class TodoForm extends React.Component {
                         onChange={this.update('body')}
                         required></textarea>
                 </label>
+
+                <label>Do? <br />
+                    <select value={this.state.doitness} onChange={this.handleChange}>
+                        <option value="true">To Do</option>
+                        <option value="false">Not To Do</option>
+                    </select>
+
+                </label>
+
                 <button className='create-todo-button'>Add Todo</button>
             </form>
         );
