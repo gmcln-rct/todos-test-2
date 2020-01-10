@@ -49,63 +49,74 @@ h2 {
 ul {
     width: 60%;
     margin: 0 auto;
-
 }
 
 li {
     width: 100%;
     min-width: 100%;
 }
+
 li.todo-list-item {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
 
     margin-bottom: 1rem;
-
     padding: 1rem;
     
-    color: #C4182F;
+
     background-color: #FFCCB5;
     
     list-style: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     font-weight: 600;
-
 }
 
-.todo, .not-to-do {
-    width: 10rem;
-    margin: 0 1rem;
-    border: none;
-    background-color: #8F0A5E;
+.todo-title {
+    width: 40%;
+    min-width: 30rem;
+    margin: 0 2rem;    
+    color: #C4182F;
+    text-align: left;
 }
 
 .status-do, .status-not-do {
-    width: 10rem;
+    width: 15%;
+    min-width: 10rem;
     margin: 0 1rem;
 }
 
 .status-do {
-
     color: #0488C4;
 }
 
 .status-not-do {
-
     color: #E01094;
 }
 
-.todo-title {
-    min-width: 60%;
-    text-align: left;
+
+/* BUTTONS */
+.action-buttons {
+    width: 20%;
+    min-width: 25rem;
+    
+}
+.todo, .not-to-do {
+    width: 10rem;
+    margin: 0 1rem;
+        padding: 0.5rem;
+    border: none;
+    background-color: #D1400F;
 }
 
 .delete-button {
     width: 6em;
-    padding: 5px;
+    padding: 0.5rem;
+
+    border: none;
+    background-color: #DB250F;
+    
     font-size: 1rem;
 }
 

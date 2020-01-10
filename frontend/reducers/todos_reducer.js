@@ -3,7 +3,7 @@ import { RECEIVE_TODOS, RECEIVE_TODO, REMOVE_TODO } from '../actions/todo_action
 const initialState = {
     1: {
         id: 1,
-        title: "lick lead paint daily",
+        title: "lick lead paint on side of old house",
         body: "bring lots of soap",
         done: false,
         doitness: false

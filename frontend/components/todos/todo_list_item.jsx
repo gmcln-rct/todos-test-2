@@ -34,16 +34,19 @@ class TodoListItem extends React.Component {
                     {title}
                 </div>
                 <div className={doitstatus}>{doitness ? "Do" : "Not To Do"}</div>
-                <button
-                    className={doitness ? "todo" : "not-to-do"}
-                    onClick= {this.toggleTodo} >
-                    Change Mind
-                </button>
-                <button
-                    className="delete-button"
-                    onClick={this.handleDelete}>
-                    Delete
-                </button>
+                <div className="action-buttons">
+                    <button
+                        className={doitness ? "todo" : "not-to-do"}
+                        onClick= {this.toggleTodo} >
+                        Change Mind
+                    </button>
+                    <button
+                        className="delete-button"
+                        onClick={this.handleDelete}>
+                        Delete
+                    </button>
+                </div>
+
             </li>
         )
     }
