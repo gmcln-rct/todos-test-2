@@ -15,28 +15,25 @@ class TodoListItem extends React.Component {
             this.props.todo,
             { doitness: !this.props.todo.doitness }
         );
-        alert('Really? Are you sure?? I mean, up to you.');
         this.props.receiveTodo(toggledTodo);
     }
 
     handleDelete() {
-        const { todo, removeTodo } = this.props;
-        const { title, doitness, id } = todo;
-        const todoId = id;
+        const { todo } = this.props;
+        const todoId = todo.id;
         this.props.removeTodo(todoId)
     }
 
     render() {
-        const {todo, removeTodo} = this.props;
+        const {todo} = this.props;
         const {title, doitness, id} = todo;
-        const todoId = id;
-        
+        const doitstatus = doitness? "status-do" : "status-not-do";
         return (
             <li className='todo-list-item'>
                 <div className="todo-title">
                     {title}
                 </div>
-                <div className="do-it-status">{doitness ? "Do" : "Not To Do"}</div>
+                <div className={doitstatus}>{doitness ? "Do" : "Not To Do"}</div>
                 <button
                     className={doitness ? "todo" : "not-to-do"}
                     onClick= {this.toggleTodo} >

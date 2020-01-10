@@ -78,13 +78,26 @@ li.todo-list-item {
 
 .todo, .not-to-do {
     width: 10rem;
-
+    margin: 0 1rem;
+    border: none;
+    background-color: #8F0A5E;
 }
 
-.do-it-status {
-    width: 8rem;
-    color: #FF3853;
+.status-do, .status-not-do {
+    width: 10rem;
+    margin: 0 1rem;
 }
+
+.status-do {
+
+    color: #0488C4;
+}
+
+.status-not-do {
+
+    color: #E01094;
+}
+
 .todo-title {
     min-width: 60%;
     text-align: left;
@@ -137,13 +150,13 @@ button:hover {
     background-color: #F9687C;
     border-color: #F9687C;
 }
+
 label {
     margin-bottom: 0.5em;
 
     color: #780E1C;
     font-size: 1.5rem;
     font-weight: 600;
-    
 
 }
 input {
