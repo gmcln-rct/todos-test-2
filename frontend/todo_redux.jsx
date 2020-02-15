@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import {allTodos} from './reducers/selectors';
-import Root from './components/root';
+import Root from './components/index';
 
 document.addEventListener('DOMContentLoaded', () => {
     const preloadedState = {};
