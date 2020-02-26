@@ -2,11 +2,13 @@
   "name": "todos2",
   "version": "1.0.0",
   "description": "Simple to do list using React, with a twist",
-  "homepage": "https://gmcln-rct.io/todos-test-2/",
+  "homepage": "https://gmcln-rct.github.io/todos-test-2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode=development --watch"
+    "start": "webpack --mode=development --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +24,8 @@
     "redux": "^4.0.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
